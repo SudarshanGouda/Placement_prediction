@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container my-4">
+
+        <!-- Intro -->
+
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading text-center">Campus Recruitment Prediction</h4>
+            <p>Campus recruitment is a strategy for sourcing, engaging and hiring young talent for internship and entry-level positions. College recruiting is typically a tactic for medium- to large-sized companies with high-volume recruiting needs, but
+                can range from small efforts (like working with university career centers to source potential candidates) to large-scale operations (like visiting a wide array of colleges and attending recruiting events throughout the spring and fall
+                semester). Campus recruitment often involves working with university career services centers and attending career fairs to meet in-person with college students and recent graduates. Some industries participate in campus recruiting more
+                than others; finance, technology, business consulting, manufacturing and engineering are a few of the most popular.</p>
+            <div class="container text-center">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202002/main_image.jpeg?AEmB0MOrFThcKQ.8H2pvP3lMkJ5AxyxP&size=770:433">
+            </div>
+
+            <hr>
+            <p class="mb-0">The dataset is collected from Kaggle website. Here is the link for the <a href="https://www.kaggle.com/benroshan/factors-affecting-campus-placement?select=Placement_Data_Full_Class.csv">dataset</a>.The goal of this project is to analyze the
+                factors that can effect the Campus Recruitment, and also creating a model which will predict the chances of getting placed depending on various factors.</p>
+        </div>
+
+
+        <!-- Form -->
+        <h3 class='text-center'>Campus Placement Predictor</h3>
+        <div class="container my-4">
+            <form action="/" method="POST">
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label for="gender">Select Gender</label>
+                    <select class="form-control" id="gender" name="gender">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                </div>
+
+                <!-- Specialisation -->
+                <div class="form-group">
+                    <label for="spec">Select Specialisation</label>
+                    <select class="form-control" id="spec" name="spec">
+                            <option value="1">Marketing and Human Resources</option>
+                            <option value="0">Marketing and Finance</option>
+                        </select>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="form-group">
+                    <label for="work">Have Work Experience ?</label>
+                    <select class="form-control" id="work" name="work">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                </div>
+
+                <!-- SSC_P -->
+
+                <div class="form-group">
+                    <label for="ssc">Enter the SSC Percentage</label>
+                    <input type="text" class="form-control" id="ssc" name="ssc">
+                </div>
+
+                <!-- HighSchool_P -->
+                <div class="form-group">
+                    <label for="hsc">Enter the High School Percentage</label>
+                    <input type="text" class="form-control" id="hsc" name="hsc">
+                </div>
+
+                <!-- Degree_P -->
+                <div class="form-group">
+                    <label for="dsc">Enter the Degree Percentage</label>
+                    <input type="text" class="form-control" id="dsc" name="dsc">
+                </div>
+
+                <!-- MBA_P -->
+                <div class="form-group">
+                    <label for="mba">Enter the MBA Percentage</label>
+                    <input type="text" class="form-control" id="mba" name="mba">
+                </div>
+
+                <!-- Etet_p -->
+                <div class="form-group">
+                    <label for="etet">Enter the etet Percentage</label>
+                    <input type="text" class="form-control" id="etet" name="etet">
+                </div>
+
+                <!-- hsc_type -->
+                <div class="form-group">
+                    <label for="hsc_type">Select Specialisation</label>
+                    <select class="form-control" id="hsc_type" name="hsc_type">
+                            <option value="hsc_s_Science">Science</option>
+                            <option value="hsc_s_Commerce">Commerce</option>
+                            <option value="hsc_s_Arts">Arts</option>
+                        </select>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
